@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Filimonov">
+    <meta name="description" content="Making Dashboard project to sum up an intermediate html and css course on odin project">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div>
+                <svg>
+                    <use xlink:href="./images/sprite.svg#icon-dashboard">
+                </svg>
+                <h1>Dashboard</h1>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-home">
+                        </svg>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-profile">
+                        </svg>
+                        <p>Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-message">
+                        </svg>
+                        <p>Messages</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-clock">
+                        </svg>
+                        <p>History</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-tasks">
+                        </svg>
+                        <p>Tasks</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-account-group">
+                        </svg>
+                        <p>Communities</p>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-cog">
+                        </svg>
+                        <p>Settings</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-help">
+                        </svg>
+                        <p>Support</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-shield-check">
+                        </svg>
+                        <p>Privacy</p>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <header class="header">
+            <div>
+                <div>
+                    <svg>
+                        <use xlink:href="./images/sprite.svg#icon-magnify">
+                    </svg>
+                    <label for="search"></label>
+                    <input type="text" id="search">
+                </div>
+                <div>
+                    <button type="button">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-bell">
+                        </svg>
+                    </button>
+                    <a href="#">
+                        <img src="" alt="">
+                        <p>Alex Filimonov</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <p>Hi there,</p>
+                    <h2>Alex Filimonov</h2>
+                </div>
+                <ul>
+                    <li>
+                        <button type="button">New</button>
+                    </li>
+                    <li>
+                        <button type="button">Upload</button>
+                    </li>
+                    <li>
+                        <button type="button">Share</button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <section>
+                <h3>Your Projects</h3>
+                <ul>
+                    <li>
+                        <h4>Super Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cupiditate laboriosam fuga alias sed minus debitis consequatur corrupti non itaque.</p>
+                        <ul>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-star">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-eye">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-source">
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Less Cool Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam voluptas distinctio veniam corporis modi. Ab voluptates, accusamus corporis assumenda quod dolor iusto distinctio magni nesciunt sed magnam cupiditate rem?</p>
+                        <ul>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-star">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-eye">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-source">
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Impossible App</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequatur.</p>
+                        <ul>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-star">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-eye">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-source">
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Easy Peasy App</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quaerat temporibus fugiat voluptates esse nihil praesentium harum rem exercitationem odit possimus quidem aliquid, necessitatibus tempora, vitae animi modi dolore quis!</p>
+                        <ul>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-star">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-eye">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-source">
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Ad Blocker</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eum explicabo quas exercitationem eaque illum!</p>
+                        <ul>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-star">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-eye">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-source">
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Money Maker</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quos esse recusandae nobis eos nulla ipsa vero explicabo cum nihil.</p>
+                        <ul>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-star">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-eye">
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <svg>
+                                        <use xlink:href="./images/sprite.svg#icon-source">
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div>
+                <aside>
+                    <h3>Announcements</h3>
+                    <ul>
+                        <li>
+                            <h4>Site Maintenance</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odio consequatur incidunt iusto repellendus harum optio tenetur hic temporibus vero.</p>
+                        </li>
+                        <li>
+                            <h4>Community Share Day</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro blanditiis consequatur aliquid quibusdam aperiam nihil.</p>
+                        </li>
+                        <li>
+                            <h4>Update Privacy Policy</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, fuga aliquid autem placeat nulla excepturi!</p>
+                        </li>
+                    </ul>
+                </aside>
+                <aside>
+                    <h3>Trending</h3>
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>@morgan</p>
+                            <p>Super Cool Project</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>@kendall</p>
+                            <p>Life Changing App</p>
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <p>@alex</p>
+                            <p>No Traffic Maker</p>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+:root {
+    --primary-bgc: #cbd5e1;
+    --sidebar-bgc: #60a5fa;
+    --header-bgc: #f8fafc;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('./fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: var(--primary-bgc);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--sidebar-bgc);
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--header-bgc);
+}
+
+.main {
+    grid-area: main;
+}
