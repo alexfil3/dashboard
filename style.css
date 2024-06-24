@@ -159,6 +159,11 @@ body {
     justify-content: flex-end;
 }
 
+.notification-icon {
+    width: 24px;
+    height: 24px;
+}
+
 .user-avatar {
     width: 60px;
     height: 60px;
@@ -257,8 +262,66 @@ body {
     height: 26px;
 }
 
-/* temporary decision */
-svg {
-    width: 24px;
-    height: 24px;
+.aside-wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, auto) 1fr;
+    gap: 40px;
+}
+
+.announcements-content {
+    background-color: var(--header-bgc);
+    padding: 10px 30px;
+    border-radius: 12px;
+}
+
+.announcements-item {
+    font-size: 0.7rem;
+    color: var(--card-text-color);
+    padding: 20px 0;
+}
+
+.announcements-item:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+}
+
+.announcements-item h4 {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.aside-title {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.trending-content {
+    background-color: var(--header-bgc);
+    padding: 30px 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.trending-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name {
+    font-family: "robotobold";
+    font-size: 0.9rem;
+    color: black;
+}
+
+.project-name {
+    font-size: 0.8rem;
+    color: var(--card-text-color);
 }
