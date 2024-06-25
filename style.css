@@ -8,6 +8,8 @@
     --action-text-color: #f8fafc;
     --card-accent-color: #fbbf24;
     --card-text-color: #4b5563;
+    --action-btn-hover: #0369a1;
+    --animation: all 300ms ease;
 }
 
 @font-face {
@@ -97,6 +99,10 @@ body {
     gap: 16px;
 }
 
+.sidebar-list li {
+    position: relative;
+}
+
 .sidebar-list-item {
     display: flex;
     align-items: center;
@@ -104,6 +110,23 @@ body {
     padding-left: 10px;
     font-family: 'robotobold';
     font-size: 1.6rem;
+}
+
+.sidebar-list-item::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--sidebar-text-color);
+    transition: var(--animation);
+}
+
+.sidebar-list-item:hover::after,
+.sidebar-list-item:focus::after {
+    width: 100%;
 }
 
 .sidebar-icon {
@@ -210,6 +233,12 @@ body {
     padding: 12px 0;
     border-radius: 20px;
     width: 110px;
+    transition: var(--animation);
+}
+
+.action-btn:hover,
+.action-btn:focus {
+    background-color: var(--action-btn-hover);
 }
 
 .main {
@@ -260,6 +289,12 @@ body {
 .card-icon {
     width: 26px;
     height: 26px;
+    transition: var(--animation);
+}
+
+.card-icon:hover,
+.card-icon:focus {
+    fill: var(--action-btn-hover);
 }
 
 .aside-wrapper {
